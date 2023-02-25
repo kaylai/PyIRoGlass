@@ -257,7 +257,7 @@ ax.fill_between(tau_arr_5200, conf_lower_5200, conf_upper_5200, color = 'k', alp
     zorder = -5, label='68% Confidence Interval')
 ax.plot(tau_arr_5200, pred_upper_5200, 'k--', lw = 0.5, zorder = 0, dashes=(16, 10))
 ax.plot(tau_arr_5200, pred_lower_5200, 'k--', lw = 0.5, zorder = 0, dashes=(16, 10), label = '68% Prediction Interval')
-ax.fill_between(tau_arr_5200[fuego_idx], conf_lower_5200[fuego_idx], conf_upper_5200[fuego_idx], color = 'r', alpha=0.30,edgecolor = None, zorder = -5, label='Fuego Interval')
+# ax.fill_between(tau_arr_5200[fuego_idx], conf_lower_5200[fuego_idx], conf_upper_5200[fuego_idx], color = 'r', alpha=0.30,edgecolor = None, zorder = -5, label='Fuego Interval')
 ax.errorbar(tau_5200, epsilon_5200, yerr = sigma_epsilon_5200, xerr = sigma_tau_5200, ls = 'none', elinewidth = 0.5, ecolor = 'k')
 ax.scatter(tau_5200, epsilon_5200, s = sz, c = '#0C7BDC', edgecolors='black', linewidth = 0.5, zorder = 15)
 ax.set_xlim([ 0.5, 1.0])
@@ -291,8 +291,7 @@ ax.fill_between(tau_arr_4500, conf_lower_4500, conf_upper_4500, color = 'k', alp
     zorder = -5, label='68% Confidence Interval')
 ax.plot(tau_arr_4500, pred_upper_4500, 'k--', lw = 0.5, zorder = 0, dashes=(16, 10))
 ax.plot(tau_arr_4500, pred_lower_4500, 'k--', lw = 0.5, zorder = 0, dashes=(16, 10), label = '68% Prediction Interval')
-ax.fill_between(tau_arr_4500[fuego_idx], conf_lower_4500[fuego_idx], conf_upper_4500[fuego_idx], color = 'r', alpha=0.30,
-    edgecolor = None, zorder = -5, label='Fuego Interval')
+# ax.fill_between(tau_arr_4500[fuego_idx], conf_lower_4500[fuego_idx], conf_upper_4500[fuego_idx], color = 'r', alpha=0.30, edgecolor = None, zorder = -5, label='Fuego Interval')
 ax.errorbar(tau_4500, epsilon_4500, yerr = sigma_epsilon_4500, xerr = sigma_tau_4500, ls = 'none', elinewidth = 0.5, ecolor = 'k')
 ax.scatter(tau_4500, epsilon_4500, s = sz, c = '#0C7BDC', edgecolors='black', linewidth = 0.5, zorder = 15)
 ax.set_xlim([ 0.5, 1.0])
@@ -317,12 +316,10 @@ sz = 150
 fig, ax = plt.subplots(1, 1, figsize = (8, 8))
 ax.plot(tau_arr_3550, epsilon_3550_arr, 'k', lw = 2, zorder = 0, label = legend_3550)
 mand.set_dashes([1.5, 1, 3, 1])
-ax.fill_between(tau_arr_3550, conf_lower_3550, conf_upper_3550, color = 'k', alpha=0.20, edgecolor = None,
-    zorder = -5, label='68% Confidence Interval')
+ax.fill_between(tau_arr_3550, conf_lower_3550, conf_upper_3550, color = 'k', alpha=0.20, edgecolor = None, zorder = -5, label='68% Confidence Interval')
 ax.plot(tau_arr_3550, pred_upper_3550, 'k--', lw = 0.5, zorder = 0, dashes=(16, 10))
 ax.plot(tau_arr_3550, pred_lower_3550, 'k--', lw = 0.5, zorder = 0, dashes=(16, 10), label = '68% Prediction Interval')
-ax.fill_between(tau_arr_3550[fuego_idx], conf_lower_3550[fuego_idx], conf_upper_3550[fuego_idx], color = 'r', alpha=0.30,
-    edgecolor = None, zorder = -5, label='Fuego Interval')
+# ax.fill_between(tau_arr_3550[fuego_idx], conf_lower_3550[fuego_idx], conf_upper_3550[fuego_idx], color = 'r', alpha=0.30, edgecolor = None, zorder = -5, label='Fuego Interval')
 ax.errorbar(tau_3550, epsilon_3550, yerr = sigma_epsilon_3550, xerr = sigma_tau_3550, ls = 'none', elinewidth = 0.5, ecolor = 'k')
 ax.scatter(tau_3550, epsilon_3550, s = sz, c = '#0C7BDC', edgecolors='black', linewidth = 0.5, zorder = 15)
 ax.set_xlim([0.4, 1.0])
@@ -349,12 +346,10 @@ fig, ax = plt.subplots(1, 1, figsize = (8, 8))
 ax.plot(tau_arr_1635, epsilon_1635_arr, 'k', lw = 2, zorder = 0, label = legend_1635)
 mand, = ax.plot(tau_arr_1635, epsilon_1635_mandeville, 'k-.', lw = 2, zorder = 0, label = 'Mandeville et al., 2002')
 mand.set_dashes([1.5, 1, 3, 1])
-ax.fill_between(tau_arr_1635, conf_lower_1635, conf_upper_1635, color = 'k', alpha=0.20, edgecolor = None,
-    zorder = -5, label='68% Confidence Interval')
+ax.fill_between(tau_arr_1635, conf_lower_1635, conf_upper_1635, color = 'k', alpha=0.20, edgecolor = None, zorder = -5, label='68% Confidence Interval')
 ax.plot(tau_arr_1635, pred_upper_1635, 'k--', lw = 0.5, zorder = 0, dashes=(16, 10))
 ax.plot(tau_arr_1635, pred_lower_1635, 'k--', lw = 0.5, zorder = 0, dashes=(16, 10), label = '68% Prediction Interval')
-ax.fill_between(tau_arr_1635[fuego_idx], conf_lower_1635[fuego_idx], conf_upper_1635[fuego_idx], color = 'r', alpha=0.30,
-    edgecolor = None, zorder = -5, label='Fuego Interval')
+# ax.fill_between(tau_arr_1635[fuego_idx], conf_lower_1635[fuego_idx], conf_upper_1635[fuego_idx], color = 'r', alpha=0.30, edgecolor = None, zorder = -5, label='Fuego Interval')
 ax.errorbar(tau_1635, epsilon_1635, yerr = sigma_epsilon_1635, xerr = sigma_tau_1635, ls = 'none', elinewidth = 0.5, ecolor = 'k')
 ax.scatter(tau_1635, epsilon_1635, s = sz, c = '#0C7BDC', edgecolors='black', linewidth = 0.5, zorder = 15)
 ax.set_xlim([0.5, 1.0])
@@ -391,17 +386,15 @@ ax.scatter(high_df['Na/Na+Ca'], high_df['Epsilon_Carbonate'], s = sz, c = '#E422
 
 dixonpan, = ax.plot(naca_arr, epsilon_carbonate_dixonpan, 'k-.', lw = 1.5, zorder = 0, label = 'Dixon and Pan, 1995')
 dixonpan.set_dashes([1.5, 1, 3, 1])
-legend_carbonate = '$\mathregular{ƐCO_3^{2-}}$= ' + f'{round(mest_carbonate[0],3)}(±{round(np.sqrt(np.diag(covm_est_carbonate))[0],3)}) - {round(mest_carbonate[1],3)*-1}(±{round(np.sqrt(np.diag(covm_est_carbonate))[1],3)})' + '·' + f'Na/(Na+Ca), N={len(naca)}'
+legend_carbonate = '$\mathregular{ƐCO_3^{2-}}$= ' + f'{round(mest_carbonate[0],3)}(±{round(np.sqrt(np.diag(covm_est_carbonate))[0],3)}) - {round(mest_carbonate[1],3)*-1}(±{round(np.sqrt(np.diag(covm_est_carbonate))[1],3)})' + '·' + f'$\\eta$, N={len(naca)}'
 ax.plot(naca_arr, epsilon_carbonate_arr, 'k', lw = 2, zorder = 0, label = legend_carbonate)
-ax.fill_between(naca_arr, conf_lower_carbonate, conf_upper_carbonate, color = 'k', alpha=0.20, edgecolor = None,
-    zorder = -5, label='68% Confidence Interval')
+ax.fill_between(naca_arr, conf_lower_carbonate, conf_upper_carbonate, color = 'k', alpha=0.20, edgecolor = None, zorder = -5, label='68% Confidence Interval')
 ax.plot(naca_arr, pred_upper_carbonate, 'k--', lw = 0.5, zorder = 0, dashes=(16, 10))
 ax.plot(naca_arr, pred_lower_carbonate, 'k--', lw = 0.5, zorder = 0, dashes=(16, 10), label = '68% Prediction Interval')
-ax.fill_between(naca_arr[fuego_idx], conf_lower_carbonate[fuego_idx], conf_upper_carbonate[fuego_idx], color = 'r', alpha=0.30, edgecolor = None,
-    zorder = -5, label='Fuego Interval')
+# ax.fill_between(naca_arr[fuego_idx], conf_lower_carbonate[fuego_idx], conf_upper_carbonate[fuego_idx], color = 'r', alpha=0.30, edgecolor = None, zorder = -5, label='Fuego Interval')
 ax.set_xlim([0.1, 0.9])
 ax.set_ylim([0, 500])
-ax.set_xlabel('Na/(Na+Ca)') 
+ax.set_xlabel('$\mathregular{\\eta=Na/(Na+Ca)}$') 
 ax.set_ylabel('$\mathregular{ƐCO_3^{2-}}$')
 
 ax.legend(loc = 'lower left', labelspacing = 0.4, handletextpad = 0.5, handlelength = 1.50, prop={'size': 12}, frameon=False)
@@ -427,12 +420,10 @@ legend_5200 = '$\mathregular{ƐH_2O_{m, 5200}}$ = ' + f'{round(mest_5200[0],3)}(
 ax[0].plot(tau_arr_5200, epsilon_5200_arr, 'k', lw = 2, zorder = 0, label = legend_5200)
 mand, = ax[0].plot(tau_arr_5200, epsilon_5200_mandeville, 'k-.', lw = 2, zorder = 0, label = 'Mandeville et al., 2002')
 mand.set_dashes([1.5, 1, 3, 1])
-ax[0].fill_between(tau_arr_5200, conf_lower_5200, conf_upper_5200, color = 'k', alpha=0.20, edgecolor = None,
-    zorder = -5, label='68% Confidence Interval')
+ax[0].fill_between(tau_arr_5200, conf_lower_5200, conf_upper_5200, color = 'k', alpha=0.20, edgecolor = None, zorder = -5, label='68% Confidence Interval')
 ax[0].plot(tau_arr_5200, pred_upper_5200, 'k--', lw = 0.5, zorder = 0, dashes=(16, 10))
 ax[0].plot(tau_arr_5200, pred_lower_5200, 'k--', lw = 0.5, zorder = 0, dashes=(16, 10), label = '68% Prediction Interval')
-ax[0].fill_between(tau_arr_5200[fuego_idx], conf_lower_5200[fuego_idx], conf_upper_5200[fuego_idx], color = 'r', alpha=0.30,
-    edgecolor = None, zorder = -5, label='Fuego Interval')
+# ax[0].fill_between(tau_arr_5200[fuego_idx], conf_lower_5200[fuego_idx], conf_upper_5200[fuego_idx], color = 'r', alpha=0.30, edgecolor = None, zorder = -5, label='Fuego Interval')
 ax[0].errorbar(tau_5200, epsilon_5200, yerr = sigma_epsilon_5200, xerr = sigma_tau_5200, ls = 'none', elinewidth = 0.5, ecolor = 'k')
 ax[0].scatter(tau_5200, epsilon_5200, s = sz, c = '#0C7BDC', edgecolors='black', linewidth = 0.5, zorder = 15)
 ax[0].set_xlim([ 0.5, 1.0])
@@ -457,8 +448,7 @@ ax[1].fill_between(tau_arr_4500, conf_lower_4500, conf_upper_4500, color = 'k', 
     zorder = -5, label='68% Confidence Interval')
 ax[1].plot(tau_arr_4500, pred_upper_4500, 'k--', lw = 0.5, zorder = 0, dashes=(16, 10))
 ax[1].plot(tau_arr_4500, pred_lower_4500, 'k--', lw = 0.5, zorder = 0, dashes=(16, 10), label = '68% Prediction Interval')
-ax[1].fill_between(tau_arr_4500[fuego_idx], conf_lower_4500[fuego_idx], conf_upper_4500[fuego_idx], color = 'r', alpha=0.30,
-    edgecolor = None, zorder = -5, label='Fuego Interval')
+# ax[1].fill_between(tau_arr_4500[fuego_idx], conf_lower_4500[fuego_idx], conf_upper_4500[fuego_idx], color = 'r', alpha=0.30, edgecolor = None, zorder = -5, label='Fuego Interval')
 ax[1].errorbar(tau_4500, epsilon_4500, yerr = sigma_epsilon_4500, xerr = sigma_tau_4500, ls = 'none', elinewidth = 0.5, ecolor = 'k')
 ax[1].scatter(tau_4500, epsilon_4500, s = sz, c = '#0C7BDC', edgecolors='black', linewidth = 0.5, zorder = 15)
 ax[1].set_xlim([ 0.5, 1.0])
@@ -480,8 +470,7 @@ ax[2].fill_between(tau_arr_3550, conf_lower_3550, conf_upper_3550, color = 'k', 
     zorder = -5, label='68% Confidence Interval')
 ax[2].plot(tau_arr_3550, pred_upper_3550, 'k--', lw = 0.5, zorder = 0, dashes=(16, 10))
 ax[2].plot(tau_arr_3550, pred_lower_3550, 'k--', lw = 0.5, zorder = 0, dashes=(16, 10), label = '68% Prediction Interval')
-ax[2].fill_between(tau_arr_3550[fuego_idx], conf_lower_3550[fuego_idx], conf_upper_3550[fuego_idx], color = 'r', alpha=0.30,
-    edgecolor = None, zorder = -5, label='Fuego Interval')
+# ax[2].fill_between(tau_arr_3550[fuego_idx], conf_lower_3550[fuego_idx], conf_upper_3550[fuego_idx], color = 'r', alpha=0.30, edgecolor = None, zorder = -5, label='Fuego Interval')
 ax[2].errorbar(tau_3550, epsilon_3550, yerr = sigma_epsilon_3550, xerr = sigma_tau_3550, ls = 'none', elinewidth = 0.5, ecolor = 'k')
 ax[2].scatter(tau_3550, epsilon_3550, s = sz, c = '#0C7BDC', edgecolors='black', linewidth = 0.5, zorder = 15)
 ax[2].set_xlim([0.4, 1.0])
@@ -506,8 +495,7 @@ ax[3].fill_between(tau_arr_1635, conf_lower_1635, conf_upper_1635, color = 'k', 
     zorder = -5, label='68% Confidence Interval')
 ax[3].plot(tau_arr_1635, pred_upper_1635, 'k--', lw = 0.5, zorder = 0, dashes=(16, 10))
 ax[3].plot(tau_arr_1635, pred_lower_1635, 'k--', lw = 0.5, zorder = 0, dashes=(16, 10), label = '68% Prediction Interval')
-ax[3].fill_between(tau_arr_1635[fuego_idx], conf_lower_1635[fuego_idx], conf_upper_1635[fuego_idx], color = 'r', alpha=0.30,
-    edgecolor = None, zorder = -5, label='Fuego Interval')
+# ax[3].fill_between(tau_arr_1635[fuego_idx], conf_lower_1635[fuego_idx], conf_upper_1635[fuego_idx], color = 'r', alpha=0.30, edgecolor = None, zorder = -5, label='Fuego Interval')
 ax[3].errorbar(tau_1635, epsilon_1635, yerr = sigma_epsilon_1635, xerr = sigma_tau_1635, ls = 'none', elinewidth = 0.5, ecolor = 'k')
 ax[3].scatter(tau_1635, epsilon_1635, s = sz, c = '#0C7BDC', edgecolors='black', linewidth = 0.5, zorder = 15)
 ax[3].set_xlim([0.5, 1.0])
@@ -536,17 +524,16 @@ ax[4].scatter(high_df['Na/Na+Ca'], high_df['Epsilon_Carbonate'], s = sz, c = '#E
 
 dixonpan, = ax[4].plot(naca_arr, epsilon_carbonate_dixonpan, 'k-.', lw = 1.5, zorder = 0, label = 'Dixon and Pan, 1995')
 dixonpan.set_dashes([1.5, 1, 3, 1])
-legend_carbonate = '$\mathregular{ƐCO_3^{2-}}$= ' + f'{round(mest_carbonate[0],3)}(±{round(np.sqrt(np.diag(covm_est_carbonate))[0],3)})-{round(mest_carbonate[1],3)*-1}(±{round(np.sqrt(np.diag(covm_est_carbonate))[1],3)})' + '·' + f'Na/(Na+Ca)'
+legend_carbonate = '$\mathregular{ƐCO_3^{2-}}$= ' + f'{round(mest_carbonate[0],3)}(±{round(np.sqrt(np.diag(covm_est_carbonate))[0],3)})-{round(mest_carbonate[1],3)*-1}(±{round(np.sqrt(np.diag(covm_est_carbonate))[1],3)})' + '·' + f'$\\eta$'
 ax[4].plot(naca_arr, epsilon_carbonate_arr, 'k', lw = 2, zorder = 0, label = legend_carbonate)
 ax[4].fill_between(naca_arr, conf_lower_carbonate, conf_upper_carbonate, color = 'k', alpha=0.20, edgecolor = None,
     zorder = -5, label='68% Confidence Interval')
 ax[4].plot(naca_arr, pred_upper_carbonate, 'k--', lw = 0.5, zorder = 0, dashes=(16, 10))
 ax[4].plot(naca_arr, pred_lower_carbonate, 'k--', lw = 0.5, zorder = 0, dashes=(16, 10), label = '68% Prediction Interval')
-ax[4].fill_between(naca_arr[fuego_idx], conf_lower_carbonate[fuego_idx], conf_upper_carbonate[fuego_idx], color = 'r', alpha=0.30, edgecolor = None,
-    zorder = -5, label='Fuego Interval')
+# ax[4].fill_between(naca_arr[fuego_idx], conf_lower_carbonate[fuego_idx], conf_upper_carbonate[fuego_idx], color = 'r', alpha=0.30, edgecolor = None, zorder = -5, label='Fuego Interval')
 ax[4].set_xlim([0.1, 0.9])
 ax[4].set_ylim([0, 500])
-ax[4].set_xlabel('Na/(Na+Ca)') 
+ax[4].set_xlabel('$\mathregular{\\eta=Na/(Na+Ca)}$') 
 ax[4].set_ylabel('$\mathregular{ƐCO_3^{2-}}$')
 ax[4].legend(loc = 'lower left', labelspacing = 0.4, handletextpad = 0.5, handlelength = 1.50, prop={'size': 12}, frameon=False)
 ax[4].tick_params(axis="x", direction='in', length=5, pad = 6.5)
